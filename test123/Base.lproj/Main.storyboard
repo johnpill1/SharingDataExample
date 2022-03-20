@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pff-iN-U4K">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Screen 1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test123" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4D-3Y-jCH">
+                                <rect key="frame" x="20" y="164" width="374" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="1lI-u3-aOv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="60"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kQ-jy-bw8">
+                                <rect key="frame" x="93" y="698" width="228" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="vLw-4Z-ikK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Score + 1">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="scoreButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTi-Tr-gwq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4kQ-jy-bw8" secondAttribute="bottom" constant="40" id="1Q8-iB-Njk"/>
+                            <constraint firstItem="o4D-3Y-jCH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ebd-cR-Bin"/>
+                            <constraint firstItem="4kQ-jy-bw8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="UGE-Em-pSi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4kQ-jy-bw8" secondAttribute="trailing" constant="93" id="bc7-z5-TPV"/>
+                            <constraint firstItem="o4D-3Y-jCH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="hl4-Yl-RUu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o4D-3Y-jCH" secondAttribute="trailing" constant="20" id="qfN-mx-rKd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Screen 1" image="1.circle" catalog="system" selectedImage="1.circle.fill" id="ezV-HN-u0A"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="o4D-3Y-jCH" id="ITP-4A-VnK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813.04347826086962" y="57.589285714285708"/>
+        </scene>
+        <!--Screen 2-->
+        <scene sceneID="zAq-Ln-VLC">
+            <objects>
+                <viewController id="o1Z-3C-N6e" customClass="ViewController2" customModule="test123" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D5i-MN-x21">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRM-zg-7Ga">
+                                <rect key="frame" x="20" y="164" width="374" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="neN-nI-TN2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="60"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfT-4a-Zso">
+                                <rect key="frame" x="93" y="698" width="228" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="zcr-eB-DWP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Score + 1">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                    <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="scoreButtonPushed:" destination="o1Z-3C-N6e" eventType="touchUpInside" id="R6X-vn-MUk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ktn-A0-L8q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DfT-4a-Zso" firstAttribute="leading" secondItem="ktn-A0-L8q" secondAttribute="leading" constant="93" id="11w-Jz-Ian"/>
+                            <constraint firstItem="ktn-A0-L8q" firstAttribute="trailing" secondItem="DfT-4a-Zso" secondAttribute="trailing" constant="93" id="Itn-2g-1mN"/>
+                            <constraint firstItem="sRM-zg-7Ga" firstAttribute="top" secondItem="ktn-A0-L8q" secondAttribute="top" constant="120" id="JzD-rc-HlW"/>
+                            <constraint firstItem="ktn-A0-L8q" firstAttribute="trailing" secondItem="sRM-zg-7Ga" secondAttribute="trailing" constant="20" id="fad-Sw-u0j"/>
+                            <constraint firstItem="ktn-A0-L8q" firstAttribute="bottom" secondItem="DfT-4a-Zso" secondAttribute="bottom" constant="40" id="ixM-EU-gzP"/>
+                            <constraint firstItem="sRM-zg-7Ga" firstAttribute="leading" secondItem="ktn-A0-L8q" secondAttribute="leading" constant="20" id="pCu-cQ-Ots"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Screen 2" image="2.circle" catalog="system" selectedImage="2.circle.fill" id="b1P-B6-UCQ"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="sRM-zg-7Ga" id="4Il-VN-K6D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YoR-1n-exM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1555.072463768116" y="57.589285714285708"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kcX-fk-okT">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Pff-iN-U4K" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lbh-fP-xGJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ggj-uq-bVo"/>
+                        <segue destination="o1Z-3C-N6e" kind="relationship" relationship="viewControllers" id="Zbc-Il-y0q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Bg-Q3-eJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97.101449275362327" y="57.589285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.circle" catalog="system" width="128" height="121"/>
+        <image name="1.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="2.circle" catalog="system" width="128" height="121"/>
+        <image name="2.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
